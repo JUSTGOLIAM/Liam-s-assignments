@@ -1,0 +1,94 @@
+[gd_scene load_steps=3 format=3 uid="uid://daqokpqwv12gg"]
+
+[ext_resource type="Texture2D" uid="uid://7dktjlhlc53x" path="res://Assets/—Pngtree—a squatting tabby cat_5803660.png" id="1_tfvoq"]
+[ext_resource type="Texture2D" uid="uid://bdv21lkh0514c" path="res://Assets/icon.svg" id="2_cry1t"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="forest" type="Node2D" parent="."]
+position = Vector2(803, 329)
+scale = Vector2(1, 1.00266)
+
+[node name="Trunk" type="ColorRect" parent="forest"]
+offset_left = 66.0
+offset_top = 186.503
+offset_right = 153.0
+offset_bottom = 513.503
+color = Color(0.396078, 0.211765, 0.207843, 1)
+
+[node name="leaves" type="ColorRect" parent="forest"]
+offset_right = 217.0
+offset_bottom = 217.0
+scale = Vector2(1, 1.00266)
+color = Color(0.147628, 0.754321, 4.23551e-06, 1)
+
+[node name="tree2" type="Node2D" parent="forest"]
+position = Vector2(-419, 90.7584)
+
+[node name="Trunk" type="ColorRect" parent="forest/tree2"]
+offset_left = 66.0
+offset_top = 186.503
+offset_right = 153.0
+offset_bottom = 513.503
+color = Color(0.396078, 0.211765, 0.207843, 1)
+
+[node name="leaves" type="ColorRect" parent="forest/tree2"]
+offset_right = 217.0
+offset_bottom = 217.0
+scale = Vector2(1, 1.00266)
+color = Color(0.147628, 0.754321, 4.23551e-06, 1)
+
+[node name="tree3" type="Node2D" parent="forest"]
+position = Vector2(-744, -161.57)
+
+[node name="Trunk" type="ColorRect" parent="forest/tree3"]
+offset_left = 66.0
+offset_top = 186.503
+offset_right = 153.0
+offset_bottom = 513.503
+color = Color(0.396078, 0.211765, 0.207843, 1)
+
+[node name="leaves" type="ColorRect" parent="forest/tree3"]
+offset_left = 3.0
+offset_top = 35.9044
+offset_right = 220.0
+offset_bottom = 252.904
+scale = Vector2(1, 1.00266)
+color = Color(0.147628, 0.754321, 4.23551e-06, 1)
+
+[node name="clouds" type="Node2D" parent="forest"]
+position = Vector2(-744, -161.57)
+
+[node name="clouds" type="ColorRect" parent="forest/clouds"]
+offset_left = 140.0
+offset_top = -66.8221
+offset_right = 594.0
+offset_bottom = -28.8221
+
+[node name="clouds2" type="ColorRect" parent="forest/clouds"]
+offset_left = 863.0
+offset_top = -181.517
+offset_right = 1317.0
+offset_bottom = -75.5168
+
+[node name="clouds3" type="ColorRect" parent="forest/clouds"]
+offset_left = 572.0
+offset_top = -29.9203
+offset_right = 789.0
+offset_bottom = 2.07965
+scale = Vector2(1, 1.00266)
+
+[node name="Dog" type="Sprite2D" parent="."]
+position = Vector2(105, 532)
+scale = Vector2(0.0611, 0.0611)
+texture = ExtResource("1_tfvoq")
+
+[node name="Robot" type="Sprite2D" parent="Dog"]
+modulate = Color(1, 0.0235294, 1, 1)
+position = Vector2(288.615, -6262.43)
+scale = Vector2(13.3914, 13.3914)
+texture = ExtResource("2_cry1t")
+
+[node name="Robot2" type="Sprite2D" parent="Dog/Robot"]
+position = Vector2(428.209, 259.877)
+texture = ExtResource("2_cry1t")
