@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6gbe04md8bv6"]
+
+[ext_resource type="Texture2D" uid="uid://i501283ov4gw" path="res://icon.svg" id="1_b26af"]
+[ext_resource type="PackedScene" uid="uid://dnmfu0bjaq7eg" path="res://enemy.tscn" id="2_rj1u3"]
+
+[node name="level" type="Node2D"]
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(256, 251)
+texture = ExtResource("1_b26af")
+
+[node name="slowEnemy" parent="." instance=ExtResource("2_rj1u3")]
+position = Vector2(508, 175)
+
+[node name="fastEnemy" parent="." instance=ExtResource("2_rj1u3")]
+position = Vector2(738, 393)
